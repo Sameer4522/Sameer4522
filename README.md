@@ -1,21 +1,31 @@
 ## Sameer Jain
 
-Frontend engineer in Gurgaon. I build interfaces for systems where performance and real time behaviour actually matter, and lately the AI features that sit on top of them.
+I build frontends for systems where being slow or wrong has consequences.
 
-Currently at SynergyLabs, where I have worked on a real time 3D digital twin for Indian Navy vessels, video inspection platforms used by 95K+ people at Flipkart and Myntra, and the AI layer of a CRM running inside a bank's direct sales operation.
+The literal version of that is a 3D digital twin running on Indian Navy vessels, where two windows show the same fire from different angles and have to agree with each other, and where the model answering questions about emergency procedures runs on the ship itself, because there is no internet at sea and a confident wrong answer during a fire is not an acceptable failure mode.
 
-Most of that work lives in private company repositories, so what is here is my own.
+The less dramatic version is a video inspection platform at Flipkart and Myntra used by 95K people, where I eventually worked out that an open ended date filter was the single most expensive thing on our infrastructure bill.
 
-**What I am interested in right now**
+### Things I think about
 
-Making LLM output reliable enough to build a product on. Constrained schemas over output parsing, validating model suggestions against real data before showing them to anyone, and knowing where deterministic logic beats a model.
+**An empty field beats a fabricated one.** I designed a lead intelligence schema where the model is explicitly told to return nothing rather than guess, because one wrong value corrupts every downstream cohort that reads it.
 
-**Working with**
+**Know where not to use the model.** On the same system, scoring and revenue math stayed deterministic and rule based. Numbers that drift between page loads destroy trust faster than a missing feature does.
+
+**Nothing is real until a human approves it.** The AI drafts campaigns. It has never sent one.
+
+### What is here
+
+Most of my work lives in private company repositories, so this account is my own projects only.
+
+### Working with
 
 React, TypeScript, Three.js, React Three Fiber, Redux Toolkit, Zustand, TanStack Query, Tailwind
 LLM integration, RAG and retrieval, structured output, prompt design
 Go, PostgreSQL, Docker
 
-**Elsewhere**
+### How I got here
+
+Bachelor of Commerce, accounting and finance. Everything above was learned because I wanted to build something specific, which is still the only reason I learn anything.
 
 [LinkedIn](https://linkedin.com/in/sameer-jain-wd) · jainsameer452@gmail.com
